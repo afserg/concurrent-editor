@@ -13,7 +13,7 @@ data class EmptyOperation<T>(override val userId: Int) : Operation<T> {
 
     override fun transformBy(delete: Delete<T>): Operation<T> = this
 
-    override fun transformBy(emptyOperation: EmptyOperation<T>): Operation<T> = emptyOperation
+    override fun transformBy(emptyOperation: EmptyOperation<T>): EmptyOperation<T> = emptyOperation
 
     override fun revert(): Operation<T> = this
 }

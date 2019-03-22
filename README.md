@@ -11,11 +11,11 @@
  
 ## Operational transformation
 
- This tool utilizes Operational Transformations. Each client has their own copy of the document. Clients operate on their local copies in a lock-free,
+ This tool uses Operational Transformations. Each client has its own copy of the document. Clients operate on their local copies in a lock-free,
  non blocking manner, and the changes are then propagated to the server. When the server receives the changes from a client, it transforms them by\
  changes made by other clients. Then it responds with the transformed changes made by other clients. The transformations ensures that document
  consistency are maintained by all sites.
- More information on Operational Transformation can be found at https://en.wikipedia.org/wiki/Operational_trnsformation.
+ More information on Operational Transformation can be found at https://en.wikipedia.org/wiki/Operational_transformation.
  
 ## Supported operations
 
